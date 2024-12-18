@@ -1,0 +1,828 @@
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: f5519260a16f4aae96d5b24492382812.vfs.cloud9.us-east-1.amazonaws.com
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: f5519260a16f4aae96d5b24492382812.vfs.cloud9.us-east-1.amazonaws.com
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: f5519260a16f4aae96d5b24492382812.vfs.cloud9.us-east-1.amazonaws.com
+Started GET "/" for 67.243.193.239 at 2024-12-18 18:05:33 +0000
+Cannot render console from 67.243.193.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY) /*application='Ngo'*/[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Ngo'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Ngo'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.2ms | GC: 0.0ms)
+Completed 200 OK in 43ms (Views: 5.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.1ms)
+
+
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Ngo'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2024-12-18 18:07:08.049609', '2024-12-18 18:07:08.049614') RETURNING "key" /*application='Ngo'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Ngo'*/[0m
+Migrating to CreateCountryDataFinals (20241218180654)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "country_data_finals" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" text, "mobilephones" float, "mortalityunder5" float, "healthexpenditurepercapita" float, "healthexpenditureppercentgdp" float, "population" float, "populationurban" float, "birthrate" float, "lifeexpectancy" float, "gdp" float, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Ngo'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20241218180654') RETURNING "version" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Ngo'*/[0m
+Started GET "/rails/info/routes" for 67.243.193.239 at 2024-12-18 18:08:04 +0000
+Cannot render console from 67.243.193.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Ngo'*/[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/layouts/application.html.erb
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/ec2-user/.local/share/gem/ruby/gems/actionpack-8.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [36 times] (Duration: 21.0ms | GC: 2.6ms)
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/actionpack-8.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 3.7ms | GC: 0.0ms)
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 60.5ms | GC: 19.0ms)
+  Rendered layout /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/layouts/application.html.erb (Duration: 62.7ms | GC: 19.0ms)
+Completed 200 OK in 90ms (Views: 67.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 19.0ms)
+
+
+Started GET "/favicon.ico" for 67.243.193.239 at 2024-12-18 18:08:04 +0000
+Cannot render console from 67.243.193.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/country_data_finals" for 67.243.193.239 at 2024-12-18 18:09:39 +0000
+Cannot render console from 67.243.193.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/index.html.erb within layouts/application
+  [1m[36mCountryDataFinal Load (1.9ms)[0m  [1m[34mSELECT "country_data_finals".* FROM "country_data_finals" /*action='index',application='Ngo',controller='country_data_finals'*/[0m
+  ↳ app/views/country_data_finals/index.html.erb:8
+  Rendered country_data_finals/index.html.erb within layouts/application (Duration: 6.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | GC: 0.9ms)
+Completed 200 OK in 126ms (Views: 26.2ms | ActiveRecord: 2.1ms (1 query, 0 cached) | GC: 9.2ms)
+
+
+Started GET "/assets/application-8b441ae0.css" for 67.243.193.239 at 2024-12-18 18:09:40 +0000
+Started GET "/assets/stimulus.min-4b1e420e.js" for 67.243.193.239 at 2024-12-18 18:09:40 +0000
+Cannot render console from 67.243.193.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/turbo.min-fae85750.js" for 67.243.193.239 at 2024-12-18 18:09:40 +0000
+Cannot render console from 67.243.193.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 67.243.193.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/application-bfcdf840.js" for 67.243.193.239 at 2024-12-18 18:09:40 +0000
+Cannot render console from 67.243.193.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 67.243.193.239 at 2024-12-18 18:09:40 +0000
+Started GET "/assets/controllers/index-ee64e1f1.js" for 67.243.193.239 at 2024-12-18 18:09:40 +0000
+Cannot render console from 67.243.193.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 67.243.193.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/application-3affb389.js" for 67.243.193.239 at 2024-12-18 18:09:40 +0000
+Cannot render console from 67.243.193.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 67.243.193.239 at 2024-12-18 18:09:40 +0000
+Cannot render console from 67.243.193.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/country_data_finals/new" for 67.243.193.239 at 2024-12-18 18:09:43 +0000
+Cannot render console from 67.243.193.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/new.html.erb within layouts/application
+  Rendered country_data_finals/_form.html.erb (Duration: 30.1ms | GC: 0.9ms)
+  Rendered country_data_finals/new.html.erb within layouts/application (Duration: 31.6ms | GC: 0.9ms)
+  Rendered layout layouts/application.html.erb (Duration: 33.3ms | GC: 0.9ms)
+Completed 200 OK in 71ms (Views: 34.4ms | ActiveRecord: 0.9ms (0 queries, 0 cached) | GC: 1.7ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.4ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Afghanistan', 0.0, 150.0, 11.0, 9.0, 26697430.0, 5771984.0, 50.0, 46.0, 2461666315.0, '2024-12-18 18:11:07.853360', '2024-12-18 18:11:07.853360') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.5ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Albania', 29791.0, 29.0, 75.0, 6.0, 3071856.0, 1280964.0, 17.0, 74.0, 3686649387.0, '2024-12-18 18:11:07.862354', '2024-12-18 18:11:07.862354') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.4ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Algeria', 86000.0, 49.0, 63.0, 3.0, 30533827.0, 18259229.0, 21.0, 70.0, 54790058957.0, '2024-12-18 18:11:07.869937', '2024-12-18 18:11:07.869937') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (3.0ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('American Samoa', 1992.0, 0.0, 0.0, 0.0, 57625.0, 51171.0, 0.0, 0.0, 0.0, '2024-12-18 18:11:07.877126', '2024-12-18 18:11:07.877126') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.5ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Andorra', 23543.0, 5.0, 1289.0, 8.0, 64634.0, 59722.0, 11.0, 0.0, 1133644295.0, '2024-12-18 18:11:07.885742', '2024-12-18 18:11:07.885742') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.5ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Angola', 25806.0, 200.0, 15.0, 2.0, 13926373.0, 6823923.0, 50.0, 46.0, 9129180361.0, '2024-12-18 18:11:07.893373', '2024-12-18 18:11:07.893373') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.3ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Antigua and Barbuda', 22000.0, 15.0, 411.0, 5.0, 77656.0, 24928.0, 21.0, 0.0, 802526701.0, '2024-12-18 18:11:07.900379', '2024-12-18 18:11:07.900379') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.5ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Argentina', 6487950.0, 20.0, 689.0, 9.0, 36930709.0, 33274569.0, 19.0, 74.0, 284204000000.0, '2024-12-18 18:11:07.907539', '2024-12-18 18:11:07.907539') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.1ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Armenia', 17486.0, 33.0, 41.0, 7.0, 3076098.0, 2002540.0, 13.0, 71.0, 1911563665.0, '2024-12-18 18:11:07.915182', '2024-12-18 18:11:07.915182') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.4ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Aruba', 15000.0, 0.0, 0.0, 0.0, 90271.0, 42157.0, 14.0, 74.0, 1858659293.0, '2024-12-18 18:11:07.922225', '2024-12-18 18:11:07.922225') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.1ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Australia', 8562000.0, 6.0, 1728.0, 8.0, 19153000.0, 16701416.0, 13.0, 80.0, 416888000000.0, '2024-12-18 18:11:07.929518', '2024-12-18 18:11:07.929518') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.2ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Austria', 6117000.0, 6.0, 2361.0, 10.0, 8011566.0, 5271610.0, 10.0, 78.0, 192071000000.0, '2024-12-18 18:11:07.936292', '2024-12-18 18:11:07.936292') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.1ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Azerbaijan', 420400.0, 67.0, 30.0, 5.0, 8048600.0, 4120883.0, 15.0, 67.0, 5272617196.0, '2024-12-18 18:11:07.948609', '2024-12-18 18:11:07.948609') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (3.2ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Bahamas, The', 31524.0, 17.0, 1072.0, 6.0, 297651.0, 244074.0, 18.0, 72.0, 6327552000.0, '2024-12-18 18:11:07.955179', '2024-12-18 18:11:07.955179') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.6ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Bahrain', 205727.0, 12.0, 488.0, 4.0, 638193.0, 564163.0, 22.0, 74.0, 7970690894.0, '2024-12-18 18:11:07.964340', '2024-12-18 18:11:07.964340') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.0ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Bangladesh', 279000.0, 86.0, 9.0, 3.0, 129592275.0, 30583777.0, 27.0, 65.0, 47124925462.0, '2024-12-18 18:11:07.972532', '2024-12-18 18:11:07.972532') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.1ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Barbados', 28467.0, 17.0, 640.0, 6.0, 267511.0, 97106.0, 12.0, 76.0, 2558850048.0, '2024-12-18 18:11:07.979555', '2024-12-18 18:11:07.979555') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.3ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Belarus', 49353.0, 14.0, 66.0, 6.0, 10005000.0, 6993495.0, 9.0, 69.0, 12736856485.0, '2024-12-18 18:11:07.986952', '2024-12-18 18:11:07.986952') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.3ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Belgium', 5629000.0, 6.0, 2025.0, 9.0, 10251250.0, 9953964.0, 11.0, 78.0, 232673000000.0, '2024-12-18 18:11:07.993608', '2024-12-18 18:11:07.993608') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.5ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Belize', 16812.0, 27.0, 123.0, 4.0, 249800.0, 119404.0, 30.0, 74.0, 832072465.0, '2024-12-18 18:11:08.001567', '2024-12-18 18:11:08.001567') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (3.1ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Benin', 55476.0, 143.0, 15.0, 4.0, 6517810.0, 2496321.0, 43.0, 53.0, 2254838685.0, '2024-12-18 18:11:08.015469', '2024-12-18 18:11:08.015469') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.2ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Bermuda', 13000.0, 0.0, 0.0, 0.0, 62100.0, 62100.0, 14.0, 78.0, 3480219000.0, '2024-12-18 18:11:08.025108', '2024-12-18 18:11:08.025108') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (1.9ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Bhutan', 0.0, 89.0, 53.0, 7.0, 571262.0, 145101.0, 27.0, 62.0, 427808817.0, '2024-12-18 18:11:08.032008', '2024-12-18 18:11:08.032008') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.4ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Bolivia', 582620.0, 82.0, 61.0, 6.0, 8307248.0, 5133879.0, 31.0, 63.0, 8397858206.0, '2024-12-18 18:11:08.038593', '2024-12-18 18:11:08.038593') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (1.9ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Bosnia and Herzegovina', 93386.0, 10.0, 106.0, 7.0, 3693698.0, 1595678.0, 11.0, 75.0, 5505984456.0, '2024-12-18 18:11:08.045431', '2024-12-18 18:11:08.045431') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.2ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Botswana', 222190.0, 96.0, 155.0, 5.0, 1757925.0, 935216.0, 27.0, 51.0, 5632391130.0, '2024-12-18 18:11:08.054791', '2024-12-18 18:11:08.054791') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (3.0ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Brazil', 23188171.0, 36.0, 265.0, 7.0, 174425387.0, 141633414.0, 21.0, 70.0, 644702000000.0, '2024-12-18 18:11:08.061620', '2024-12-18 18:11:08.061620') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.7ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Brunei Darussalam', 95000.0, 9.0, 541.0, 3.0, 327036.0, 232523.0, 23.0, 77.0, 6001153318.0, '2024-12-18 18:11:08.069018', '2024-12-18 18:11:08.069018') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.3ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Bulgaria', 738000.0, 21.0, 95.0, 6.0, 8170172.0, 5629249.0, 9.0, 72.0, 12903546576.0, '2024-12-18 18:11:08.079175', '2024-12-18 18:11:08.079175') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.1ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Burkina Faso', 25245.0, 191.0, 11.0, 5.0, 12294012.0, 2040806.0, 45.0, 50.0, 2610945549.0, '2024-12-18 18:11:08.087361', '2024-12-18 18:11:08.087361') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.4ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Burundi', 16320.0, 164.0, 7.0, 7.0, 6374347.0, 529071.0, 38.0, 46.0, 835334807.0, '2024-12-18 18:11:08.095777', '2024-12-18 18:11:08.095777') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.9ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Cambodia', 130547.0, 103.0, 17.0, 6.0, 12446949.0, 2103534.0, 27.0, 58.0, 3654031716.0, '2024-12-18 18:11:08.104363', '2024-12-18 18:11:08.104363') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.5ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Cameroon', 103279.0, 148.0, 27.0, 5.0, 15678269.0, 7823456.0, 38.0, 50.0, 10075040331.0, '2024-12-18 18:11:08.113627', '2024-12-18 18:11:08.113627') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.2ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Canada', 8727000.0, 6.0, 2082.0, 9.0, 30769700.0, 24461912.0, 11.0, 80.0, 724919000000.0, '2024-12-18 18:11:08.121186', '2024-12-18 18:11:08.121186') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (3.9ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Cape Verde', 19729.0, 46.0, 57.0, 5.0, 437238.0, 233485.0, 29.0, 70.0, 539227053.0, '2024-12-18 18:11:08.128620', '2024-12-18 18:11:08.128620') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.5ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Cayman Islands', 10700.0, 0.0, 0.0, 0.0, 40195.0, 40195.0, 0.0, 0.0, 0.0, '2024-12-18 18:11:08.138522', '2024-12-18 18:11:08.138522') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.6ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Central African Republic', 4967.0, 176.0, 10.0, 4.0, 3701607.0, 1391804.0, 39.0, 44.0, 959413051.0, '2024-12-18 18:11:08.146150', '2024-12-18 18:11:08.146150') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (6.0ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Chad', 5500.0, 190.0, 10.0, 6.0, 8222327.0, 1924025.0, 48.0, 49.0, 1385050964.0, '2024-12-18 18:11:08.154192', '2024-12-18 18:11:08.154192') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (3.6ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Channel Islands', 0.0, 0.0, 0.0, 0.0, 145330.0, 44326.0, 11.0, 78.0, 6439703435.0, '2024-12-18 18:11:08.168863', '2024-12-18 18:11:08.168863') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (3.9ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Chile', 3401525.0, 11.0, 324.0, 7.0, 15419820.0, 13245625.0, 17.0, 77.0, 75210511780.0, '2024-12-18 18:11:08.179386', '2024-12-18 18:11:08.179386') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.1ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('China', 85260000.0, 33.0, 44.0, 5.0, 1262645000.0, 452026910.0, 14.0, 72.0, 1198470000000.0, '2024-12-18 18:11:08.188455', '2024-12-18 18:11:08.188455') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (2.4ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Colombia', 2256801.0, 27.0, 161.0, 7.0, 39764166.0, 28669964.0, 23.0, 71.0, 100364000000.0, '2024-12-18 18:11:08.200985', '2024-12-18 18:11:08.200985') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Ngo'*/[0m
+  [1m[36mCountryDataFinal Create (4.2ms)[0m  [1m[32mINSERT INTO "country_data_finals" ("name", "mobilephones", "mortalityunder5", "healthexpenditurepercapita", "healthexpenditureppercentgdp", "population", "populationurban", "birthrate", "lifeexpectancy", "gdp", "created_at", "updated_at") VALUES ('Comoros', 0.0, 104.0, 10.0, 3.0, 562469.0, 158054.0, 40.0, 58.0, 201900820.0, '2024-12-18 18:11:08.208512', '2024-12-18 18:11:08.208512') RETURNING "id" /*application='Ngo'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Ngo'*/[0m
+Started GET "/country_data_finals/new" for 67.243.193.239 at 2024-12-18 18:11:11 +0000
+Cannot render console from 67.243.193.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/new.html.erb within layouts/application
+  Rendered country_data_finals/_form.html.erb (Duration: 3.7ms | GC: 0.0ms)
+  Rendered country_data_finals/new.html.erb within layouts/application (Duration: 4.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | GC: 0.0ms)
+Completed 200 OK in 16ms (Views: 6.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/country_data_finals/new" for 67.243.193.239 at 2024-12-18 18:11:12 +0000
+Cannot render console from 67.243.193.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/new.html.erb within layouts/application
+  Rendered country_data_finals/_form.html.erb (Duration: 14.2ms | GC: 6.0ms)
+  Rendered country_data_finals/new.html.erb within layouts/application (Duration: 14.9ms | GC: 6.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | GC: 6.0ms)
+Completed 200 OK in 29ms (Views: 17.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 6.0ms)
+
+
+Started GET "/country_data_finals/new" for 67.243.193.239 at 2024-12-18 18:11:13 +0000
+Cannot render console from 67.243.193.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/new.html.erb within layouts/application
+  Rendered country_data_finals/_form.html.erb (Duration: 7.4ms | GC: 0.3ms)
+  Rendered country_data_finals/new.html.erb within layouts/application (Duration: 8.7ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | GC: 0.3ms)
+Completed 200 OK in 23ms (Views: 10.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/country_data_finals/new" for 67.243.193.239 at 2024-12-18 18:11:13 +0000
+Cannot render console from 67.243.193.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/new.html.erb within layouts/application
+  Rendered country_data_finals/_form.html.erb (Duration: 3.9ms | GC: 0.0ms)
+  Rendered country_data_finals/new.html.erb within layouts/application (Duration: 4.9ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | GC: 0.3ms)
+Completed 200 OK in 17ms (Views: 6.4ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/country_data_finals" for 67.243.193.239 at 2024-12-18 18:11:44 +0000
+Cannot render console from 67.243.193.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/index.html.erb within layouts/application
+  [1m[36mCountryDataFinal Load (0.5ms)[0m  [1m[34mSELECT "country_data_finals".* FROM "country_data_finals" /*action='index',application='Ngo',controller='country_data_finals'*/[0m
+  ↳ app/views/country_data_finals/index.html.erb:8
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 4.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.9ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.6ms | GC: 0.4ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/index.html.erb within layouts/application (Duration: 77.5ms | GC: 1.6ms)
+  Rendered layout layouts/application.html.erb (Duration: 79.0ms | GC: 1.6ms)
+Completed 200 OK in 93ms (Views: 80.6ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 1.6ms)
+
+
+Started GET "/country_data_finals" for 67.243.193.239 at 2024-12-18 18:11:45 +0000
+Cannot render console from 67.243.193.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/index.html.erb within layouts/application
+  [1m[36mCountryDataFinal Load (0.6ms)[0m  [1m[34mSELECT "country_data_finals".* FROM "country_data_finals" /*action='index',application='Ngo',controller='country_data_finals'*/[0m
+  ↳ app/views/country_data_finals/index.html.erb:8
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.7ms | GC: 0.5ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/index.html.erb within layouts/application (Duration: 25.3ms | GC: 0.8ms)
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | GC: 0.8ms)
+Completed 200 OK in 37ms (Views: 26.9ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/country_data_finals" for 67.243.193.239 at 2024-12-18 18:27:01 +0000
+Cannot render console from 67.243.193.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/index.html.erb within layouts/application
+  [1m[36mCountryDataFinal Load (1.3ms)[0m  [1m[34mSELECT "country_data_finals".* FROM "country_data_finals" /*action='index',application='Ngo',controller='country_data_finals'*/[0m
+  ↳ app/views/country_data_finals/index.html.erb:12
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 1.2ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered country_data_finals/index.html.erb within layouts/application (Duration: 42.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 74.7ms | GC: 8.3ms)
+Completed 200 OK in 93ms (Views: 77.4ms | ActiveRecord: 1.2ms (1 query, 0 cached) | GC: 8.3ms)
+
+
+Started GET "/country_data_finals" for 67.243.193.239 at 2024-12-18 18:28:03 +0000
+Cannot render console from 67.243.193.239! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/index.html.erb within layouts/application
+  [1m[36mCountryDataFinal Load (1.3ms)[0m  [1m[34mSELECT "country_data_finals".* FROM "country_data_finals" /*action='index',application='Ngo',controller='country_data_finals'*/[0m
+  ↳ app/views/country_data_finals/index.html.erb:12
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.6ms | GC: 0.5ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/index.html.erb within layouts/application (Duration: 94.0ms | GC: 1.5ms)
+  Rendered layout layouts/application.html.erb (Duration: 98.1ms | GC: 1.8ms)
+Completed 200 OK in 114ms (Views: 95.9ms | ActiveRecord: 3.7ms (1 query, 0 cached) | GC: 2.3ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:32:04 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Ngo'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.4ms | GC: 0.0ms)
+Completed 200 OK in 31ms (Views: 5.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:32:08 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 33ms (Views: 22.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 15.4ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:32:08 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 200 OK in 16ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:32:09 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 200 OK in 14ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:32:53 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 200 OK in 23ms (Views: 1.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:32:53 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 200 OK in 25ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:32:54 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:32:54 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 200 OK in 15ms (Views: 0.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:33:23 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Ngo'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 32ms (Views: 9.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:33:24 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 200 OK in 30ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:33:24 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 200 OK in 11ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:33:24 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | GC: 0.0ms)
+Completed 200 OK in 11ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:33:24 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 200 OK in 12ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:33:24 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 14ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:33:24 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 35ms (Views: 1.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:33:25 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 200 OK in 12ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:33:32 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.9ms | GC: 0.0ms)
+Completed 200 OK in 21ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:33:32 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 200 OK in 11ms (Views: 0.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:33:33 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 11ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:33:33 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 200 OK in 10ms (Views: 0.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:33:33 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 200 OK in 18ms (Views: 1.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:33:46 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.9ms | GC: 0.0ms)
+Completed 200 OK in 12ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:33:52 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 10ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:34:03 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 200 OK in 20ms (Views: 0.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.7ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:34:06 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | GC: 0.0ms)
+Completed 200 OK in 11ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:34:41 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Ngo'*/[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.7ms | GC: 0.0ms)
+Completed 200 OK in 42ms (Views: 5.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:34:43 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | GC: 0.0ms)
+Completed 200 OK in 14ms (Views: 0.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:36:34 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.3ms | GC: 0.0ms)
+Completed 200 OK in 19ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:36:34 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 14ms (Views: 1.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:36:35 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.6ms | GC: 0.0ms)
+Completed 200 OK in 14ms (Views: 1.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:36:35 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.6ms | GC: 0.0ms)
+Completed 200 OK in 12ms (Views: 2.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:36:35 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 11ms (Views: 1.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:36:35 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.5ms | GC: 0.0ms)
+Completed 200 OK in 15ms (Views: 2.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:36:35 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | GC: 0.0ms)
+Completed 200 OK in 11ms (Views: 1.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 146.111.194.4 at 2024-12-18 20:36:35 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ec2-user/.local/share/gem/ruby/gems/railties-8.0.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | GC: 0.0ms)
+Completed 200 OK in 11ms (Views: 0.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/country_data_finals" for 146.111.194.4 at 2024-12-18 20:38:03 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by CountryDataFinalsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering country_data_finals/index.html.erb within layouts/application
+  [1m[36mCountryDataFinal Load (1.9ms)[0m  [1m[34mSELECT "country_data_finals".* FROM "country_data_finals" /*action='index',application='Ngo',controller='country_data_finals'*/[0m
+  ↳ app/views/country_data_finals/index.html.erb:12
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 5.0ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 2.8ms | GC: 2.5ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 23.0ms | GC: 2.8ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 1.5ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 1.8ms | GC: 1.7ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 2.4ms | GC: 1.4ms)
+  Rendered country_data_finals/_country_data_final.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered country_data_finals/index.html.erb within layouts/application (Duration: 118.2ms | GC: 26.1ms)
+  Rendered layout layouts/application.html.erb (Duration: 160.3ms | GC: 53.5ms)
+Completed 200 OK in 208ms (Views: 160.7ms | ActiveRecord: 2.5ms (1 query, 0 cached) | GC: 54.9ms)
+
+
+Started GET "/assets/application-8b441ae0.css" for 146.111.194.4 at 2024-12-18 20:38:03 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/application-bfcdf840.js" for 146.111.194.4 at 2024-12-18 20:38:03 +0000
+Started GET "/assets/turbo.min-fae85750.js" for 146.111.194.4 at 2024-12-18 20:38:03 +0000
+Started GET "/assets/stimulus.min-4b1e420e.js" for 146.111.194.4 at 2024-12-18 20:38:03 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 146.111.194.4 at 2024-12-18 20:38:03 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/application-3affb389.js" for 146.111.194.4 at 2024-12-18 20:38:04 +0000
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 146.111.194.4 at 2024-12-18 20:38:04 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/assets/controllers/index-ee64e1f1.js" for 146.111.194.4 at 2024-12-18 20:38:04 +0000
+Cannot render console from 146.111.194.4! Allowed networks: 127.0.0.0/127.255.255.255, ::1
